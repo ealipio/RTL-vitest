@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-await-sync-events */
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
@@ -36,13 +37,16 @@ describe('Counter component', () => {
     });
 
     expect(display).toHaveTextContent('counter: 0');
+
     await userEvent.click(button);
+
     await userEvent.click(button);
-    // ASSERT
+    // ASSERT ...
 
     //screen.debug(display);
 
     expect(display).toHaveTextContent('counter: 2');
+
     await userEvent.click(button);
     expect(display).toHaveTextContent('counter: 3');
   });
