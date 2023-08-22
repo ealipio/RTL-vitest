@@ -6,7 +6,7 @@ interface ButtonProps {
    */
   primary?: boolean;
   /**
-   * Is this the principal call to action on the page?
+   *  Enabled or disabled the button?
    */
   disabled?: boolean;
   /**

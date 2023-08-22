@@ -17,7 +17,7 @@ const meta = {
     backgroundColor: { control: 'color' },
     disabled: {
       type: 'boolean',
-      description: 'enabled or disabled button',
+      // description: 'enabled or disabled button',
     },
   },
 } satisfies Meta<typeof Button>;
