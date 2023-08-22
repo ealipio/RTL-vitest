@@ -6,7 +6,7 @@ interface IProps {
 
 const ReplaceCamelCase: React.FC<IProps> = ({ word }: IProps) => {
   const newWord = splitCamelCase({ word });
-  return <>{newWord}</>;
+  return <div>{newWord}</div>;
 };
 
 export default ReplaceCamelCase;
